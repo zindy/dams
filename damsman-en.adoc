@@ -1,5 +1,5 @@
 DAMS User Manual
-=======================
+================
 Pascal Séguy <pascal.seguy@laposte.net>
 :toc:
 :icons:
