@@ -862,35 +862,35 @@ Displaying an error message causes a return to the monitor.
 Here is a list of error messages and the cases in which they may appear:
 
 
-=== 0: Syntax Error ===
+=== 0: Syntax Error
 
 A command was not recognized or its syntax is incorrect.
 
 During assembly, a line is erroneous.
 
 
-=== 1: Redefine Label Error ===
+=== 1: Redefine Label Error
 
 During assembly,
 a label has the same name as another, and a label cannot have two values.
 
 
-=== 2: Relative Number Error ===
+=== 2: Relative Number Error
 
 The relative displacement of a JR or the index of an IX or IY register has a value out of range.
 
 
-=== 3: Integer Out of Range Error ===
+=== 3: Integer Out of Range Error
 
 This error occurs whenever a number should be within the ranges 0 to +255 or 0 to +65535, and you have not respected this range.
 
 
-=== 4: Illegal Character Error ===
+=== 4: Illegal Character Error
 
 During assembly, a character in a label or the line is illegal.
 
 
-=== 5: Illegal Reference Error ===
+=== 5: Illegal Reference Error
 
 During assembly:
 
@@ -898,7 +898,7 @@ During assembly:
 - The assembly command "*F,s" was found, but the text file is not assembled by block.
 
 
-=== 6: Bad ORG Error ===
+=== 6: Bad ORG Error
 
 During assembly:
 
@@ -906,12 +906,12 @@ During assembly:
 - The origin address is below DAMS, but the extent of the object code has attempted to overlap DAMS.
 
 
-=== 7: I/O Error ===
+=== 7: I/O Error
 
 Closes any operation with a device that has failed.
 
 
-=== 8: Bad Memory Error ===
+=== 8: Bad Memory Error
 
 During source loading:
 The size of the text file you are trying to load exceeds the current memory size (command `M`).
@@ -925,23 +925,23 @@ The object code has attempted to exceed the upper memory limit (HRAM).
 To remedy this, reassemble with option 1 or reload DAMS to a lower address or modify HRAM.
 
 
-=== 9: No Table Space Error ===
+=== 9: No Table Space Error
 
 During assembly:
 Option 1 has been selected, and the symbol table requires more than 16 KB.
 
 
-=== 10: Break Error ===
+=== 10: Break Error
 
 You interrupted an operation.
 
 
-=== 11: Label Absent Error ===
+=== 11: Label Absent Error
 
 This error never occurs during assembly but when you enter a command whose expression contains a label not in the symbol table.
 
 
-=== 12: Bad Location Error ===
+=== 12: Bad Location Error
 
 A command such as `Q` or `W` attempted to modify a byte occupied by DAMS.
 
